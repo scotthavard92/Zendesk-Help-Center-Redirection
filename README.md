@@ -12,14 +12,17 @@ There are several steps that must be taken in order to redirect.
  
  1. If redirecting from a Zendesk Guide article to another Zendesk Guide article, collect both of those article IDs. If redirecting from a Zendesk Guide article to an external URL, collect the old Zendesk Guide ID and the external URL.
  
-   • The Article ID can be gathered from the URL of the article
+   •The Article ID can be gathered from the URL of the article
  
  2. Edit the JavaScript Snippet. 
  
      • Replace "YOURSUBDOMAIN" with your Zendesk Guide subdomain. For example, "help.scottsupport.com" or .    "support.scottcompany.com". This should ultimately match the URL of the Zendesk Guide help center.
+     
      • If redirecting from a Guide article to another Guide article, place the old article id and the new article id in the hash table as specified in the code comment.
+     
      • If redirecting from a Guide article to an external URL, place the old article id in the hash table, and the newExternalURL variable as specified in the code comment.
-     • Place this snippet in the `<head></head>` section of the Help Center code. 
+     
+     • Place this snippet in the `<head>...</head>` section of the Help Center code. 
  
  
  
