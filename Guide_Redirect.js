@@ -27,20 +27,18 @@ if (url.includes("YOURSUBDOMAIN.com/hc/en-us/articles/")) {
 	//External Redirect Mapping
 	external_redirect['115004730086'] = "https://developer.mixpanel.com/docs/http";
 
-  //Redirects if needed -> Doesn't redirect if not. 
-  if (currentId in redirect) {
-	    if (typeof redirect[currentId] !== "undefined") {
-	  		    newUrl = 'https://help.mixpanel.com/hc/en-us/articles/' + redirect[currentId];
-	    	    window.location.replace(newUrl);
-			}
-  }
+  	//Redirects if needed -> Doesn't redirect if not. 
+  	if (currentId in redirect) {
+    		if (typeof redirect[currentId] !== "undefined") {
+			newUrl = 'https://help.mixpanel.com/hc/en-us/articles/' + redirect[currentId];
+			window.location.replace(newUrl);
+		}
+  	}
 
 	else if (currentId in external_redirect) {
-	    if (typeof external_redirect[currentId] !== "undefined") {
-			    newExternalUrl = external_redirect[currentId];
-			    window.location.replace(newExternalUrl);
-		  }
-  }
-
-
+		if (typeof external_redirect[currentId] !== "undefined") {
+			newExternalUrl = external_redirect[currentId];
+			window.location.replace(newExternalUrl);
+		}
+  	}
 }
