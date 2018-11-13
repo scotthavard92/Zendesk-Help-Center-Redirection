@@ -11,7 +11,7 @@ The JS script contained in this repository provides a workaround to redirect end
 There are several steps that must be taken in order to redirect.
  
  1. If redirecting from a Zendesk Guide article to another Zendesk Guide article, collect both of those article IDs. If redirecting from a Zendesk Guide article to an external URL, collect the old Zendesk Guide ID and the external URL.
-     • The Article ID can be gathered from the URL of the article
+   • The Article ID can be gathered from the URL of the article
  
  2. Edit the JavaScript Snippet. 
      • Replace "YOURSUBDOMAIN" with your Zendesk Guide subdomain. For example, "help.scottsupport.com" or .    "support.scottcompany.com". This should ultimately match the URL of the Zendesk Guide help center.
