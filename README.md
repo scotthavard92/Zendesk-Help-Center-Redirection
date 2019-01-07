@@ -26,5 +26,5 @@ There are several steps that must be taken in order to redirect.
      
 3. Adding additional redirects requires adding any old/new article ID's or external URLs to the hash table, and pushing the updated code live. 
  
- 
+ 4. MAKE SURE TO ARCHIVE OLD ARTICLES. If you only "unpublish", then the redirect will send to an authentication page and not to the new article. 
  
