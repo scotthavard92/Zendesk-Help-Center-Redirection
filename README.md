@@ -22,9 +22,7 @@ There are several steps that must be taken in order to redirect.
      
      • If redirecting from a Guide article to an external URL, place the old article id in the hash table, and the newExternalURL variable as specified in the code comment.
      
-     • Place this snippet in the `<head>...</head>` section of the Help Center code. This is likely in document_head.hbs.
-     
-     • Place this snippet in the `<head>...</head>` section of the Help Center code. This must also be in `<script>` tags.
+     • Place this snippet in `<script>` tags in the `<head>...</head>` section of the Help Center code. This is likely in document_head.hbs.
      
 3. Adding additional redirects requires adding any old/new article ID's or external URLs to the hash table, and pushing the updated code live. 
  
