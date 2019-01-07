@@ -22,15 +22,20 @@ if (url.includes("YOURSUBDOMAIN.com/hc/en-us/articles/")) {
 	//Internal Redirect Mapping - From a Zendesk Guide article to another Guide article
 	//Redirect['old article id'] = new article id;
 	//Redirect['1'] = 2;
+	//example:
 	redirect['115004686443'] = 115004617366;
-
+	
+	
 	//External Redirect Mapping
+	//Send to a new website! Replace developer
+	//example:
 	external_redirect['115004730086'] = "https://developer.mixpanel.com/docs/http";
-
+	
+	//Replace YOURSUBDOMAIN with the location of your help center. For example, "support.company.com"
   	//Redirects if needed -> Doesn't redirect if not. 
   	if (currentId in redirect) {
     		if (typeof redirect[currentId] !== "undefined") {
-			newUrl = 'https://help.mixpanel.com/hc/en-us/articles/' + redirect[currentId];
+			newUrl = 'https://YOURSUBDOMAIN.com/hc/en-us/articles/' + redirect[currentId];
 			window.location.replace(newUrl);
 		}
   	}
