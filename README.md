@@ -28,3 +28,7 @@ There are several steps that must be taken in order to redirect.
  
  4. MAKE SURE TO ARCHIVE OLD ARTICLES. If you only "unpublish", then the redirect will send to an authentication page and not to the new article. 
  
+
+## Video Instructions
+[Video link here](https://youtu.be/cLfHowe4ALI)
+
